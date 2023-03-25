@@ -3,7 +3,6 @@ const navA = document.querySelectorAll(".nav-link");
 
 
 var timeUp;
-var timeBack;
 
 
 // menu event effect 
@@ -11,11 +10,18 @@ var timeBack;
 for (let a of navA) {
 
 
+
     if (window.innerWidth <= 1260) {
 
         a.addEventListener("mouseenter", function (e) {
+            var timeBack;
 
-            clearTimeout(timeBack);
+            if (timeBack != undefined) {
+                clearTimeout(timeBack);
+                console.log(timeBack);
+            }
+
+            console.log(timeBack);
 
             timeUp = setTimeout(() => {
 
