@@ -58,7 +58,8 @@ i {
 }
 
 .hamburger-li {
-    margin-top: 2.3rem !important;
+    margin-top: auto !important;
+    margin-bottom: 1.2rem !important;
 }
 
 
@@ -80,8 +81,8 @@ i {
     margin-top: 1.9rem !important;
     gap: .5rem !important;
     width: 100% !important;
+    height: 100%;
 
-    /* background-color: red !important; */
 
 }
 
@@ -143,12 +144,14 @@ i {
     .navbar-nav {
         margin-top: 2.5rem !important;
         gap: .7rem !important;
-        /* background-color: red !important; */
+
+
     }
 
 
     .hamburger-li {
-        margin-top: 1.8rem !important;
+        margin-bottom: 1.4rem !important;
+        margin-top: auto !important;
     }
 
 
