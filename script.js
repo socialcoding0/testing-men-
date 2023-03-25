@@ -5,12 +5,13 @@ const navA = document.querySelectorAll(".nav-link");
 var timeUp;
 var timeBack;
 
+
+// menu event effect 
+
 for (let a of navA) {
-    // console.log(a);
+
 
     if (window.innerWidth <= 1260) {
-
-
 
         a.addEventListener("mouseenter", function (e) {
 
@@ -43,8 +44,6 @@ for (let a of navA) {
             }, 100);
 
         });
-
-
 
     }
 }
