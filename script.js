@@ -36,8 +36,6 @@ for (let a of navA) {
                 let span = e.target.children[1];
                 // console.log(e.target.children[1]);
                 if (span.classList.contains("span-up")) {
-
-
                     span.classList.add("span-back");
                     span.classList.remove("span-up");
                 }
