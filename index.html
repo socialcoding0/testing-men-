@@ -13,12 +13,20 @@
 
 <body>
 
-  <div class="container-fluid">
-    <div class="row">
+  <div class="container-fluid" id="main">
+    <div class="row" id="main-row">
+      <div class="col d-sm-flex d-md-none d-lg-none" id="top-menu">
+        <img src="./logo.png" width="110" height="40" class="top-logo-img">
+        <div class="searching-container">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="input" placeholder="Ara">
+        </div>
+        <i class="fa-regular fa-heart"></i>
+      </div>
       <div class="col-lg-3 px-0" id="left-menu">
         <nav class="navbar flex-column align-items-start justify-content-start">
-          <a href="#" class="navbar-brand">
-            <img src="./logo.png" alt="instagram-logo" width="120" height="43" class="d-inline-block align-text-top">
+          <a href="#" class="navbar-brand d-none d-md-block">
+            <img src="./logo.png" alt="instagram-logo" width="110" height="40" class="d-inline-block align-text-top">
             <i class="fa-brands fa-instagram"></i>
           </a>
 
@@ -27,7 +35,7 @@
                 <i class="fa-solid fa-house"></i>
                 <span>Ana
                   Sayfa</span></a></li>
-            <li class="nav-item py-0"><a class="nav-link d-flex align-items-center gap-3" href="#"><i
+            <li class="nav-item py-0 d-none d-md-block"><a class="nav-link d-flex align-items-center gap-3" href="#"><i
                   class="fa-solid fa-magnifying-glass"></i><span>Ara</span></a></li>
             <li class="nav-item py-0"><a class="nav-link d-flex align-items-center gap-3" href="#"><i
                   class="fa-solid fa-rocket"></i><span>Keşfet</span></a></li>
@@ -35,7 +43,7 @@
                   class="fa-solid fa-clapperboard"></i><span>Reels</span></a></li>
             <li class="nav-item py-0"><a class="nav-link d-flex align-items-center gap-3" href="#"><i
                   class="fa-regular fa-comment"></i><span>Mesajlar</span></a></li>
-            <li class="nav-item py-0"><a class="nav-link d-flex align-items-center gap-3" href="#"><i
+            <li class="nav-item py-0 d-none d-md-block"><a class="nav-link d-flex align-items-center gap-3" href="#"><i
                   class="fa-regular fa-heart"></i><span>Bildirimler</span></a></li>
             <li class="nav-item py-0">
               <a class="nav-link d-flex align-items-center gap-3" href="#">
@@ -47,7 +55,8 @@
                 <i class="fa-regular fa-circle-user"></i>
                 <span>Profil</span></a></li>
 
-            <li class="nav-item hamburger-li"><a class="nav-link d-flex align-items-center gap-3" href="#">
+            <li class="nav-item hamburger-li d-none d-md-block"><a class="nav-link d-flex align-items-center gap-3"
+                href="#">
                 <i class="fa-solid fa-bars"></i>
                 <span>Daha fazla</span></a></li>
 
@@ -59,36 +68,512 @@
       </div>
 
 
-      <div class="col" id="content">
+      <div class="col-xl" id="content">
+        <div class="row" id="content-wrap">
+          <div class="col-xl-8 " id="slider">
 
-        <h1>slider</h1>
-        <h1>slider</h1>
-        <h1>slider</h1>
-        <h1>slider</h1>
-        <h1>slider</h1>
-        <h1>slider</h1>
-        <h1>slider</h1>
-        <h1>slider</h1>
-        <h1>slider</h1>
-        <h1>slider</h1>
-        <h1>slider</h1>
-        <h1>slider</h1>
-        <h1>slider</h1>
-        <h1>slider</h1>
-        <h1>slider</h1>
-        <h1>slider</h1>
-        <h1>slider</h1>
-        <h1>slider</h1>
-        <h1>slider</h1>
-        <h1>slider</h1>
+            <div class="container" id="slider-content">
+
+
+              <div class="profile-slider-controller">
+                <i class="fa-solid fa-circle-chevron-left" id="profile-slider-left-control"></i>
+                <i class="fa-solid fa-circle-chevron-right" id="profile-slider-right-control"></i>
+              </div>
+
+              <div class="d-flex align-items-center justify-content-center" id="profile-container">
+                <div class="d-flex" id="profile-slider">
+
+
+                  <div class="profile">
+                    <div class="img-div">
+                      <img src="./img/story-profile/javascriptcode.jpg">
+                    </div>
+                    <p>javascriptcode</p>
+                  </div>
+
+
+                  <div class="profile">
+                    <div class="img-div">
+                      <img src="./img/suggestion-profile/kodluyoruz.jpg">
+                    </div>
+                    <p>kodluyoruz</p>
+                  </div>
+                  <div class="profile">
+                    <div class="img-div">
+                      <img src="./img/story-profile/frontendjoe.jpg">
+                    </div>
+                    <p>frontendjoe</p>
+                  </div>
+                  <div class="profile">
+                    <div class="img-div">
+                      <img src="./img/story-profile/kevinpowell.co.jpg">
+                    </div>
+                    <p>kevinpowell.co</p>
+                  </div>
+                  <div class="profile">
+                    <div class="img-div">
+                      <img src="./img/suggestion-profile/patika.jpg">
+                    </div>
+
+                    <p>patika</p>
+                  </div>
+                  <div class="profile">
+                    <div class="img-div">
+                      <img src="./img/post-profile/profile-1.jpg">
+                    </div>
+                    <p>nordic_sisterhood</p>
+                  </div>
+                  <div class="profile">
+                    <div class="img-div">
+                      <img src="./img/post-profile/profile-2.jpg">
+                    </div>
+                    <p>web_talks</p>
+                  </div>
+                  <div class="profile">
+                    <div class="img-div">
+                      <img src="./img/post-profile/profile-3.jpg">
+                    </div>
+                    <p>ahrenshreeve</p>
+                  </div>
+                  <div class="profile">
+                    <div class="img-div">
+                      <img src="./img/story-profile/none-photo.jpg">
+                    </div>
+                    <p>profile9</p>
+                  </div>
+                  <div class="profile">
+                    <div class="img-div">
+                      <img src="./img/story-profile/none-photo.jpg">
+                    </div>
+                    <p>profile10</p>
+                  </div>
+                  <div class="profile">
+                    <div class="img-div">
+                      <img src="./img/story-profile/none-photo.jpg">
+                    </div>
+                    <p>profile11</p>
+                  </div>
+                  <div class="profile">
+                    <div class="img-div">
+                      <img src="./img/story-profile/none-photo.jpg">
+                    </div>
+                    <p>profile12</p>
+                  </div>
+                  <div class="profile">
+                    <div class="img-div">
+                      <img src="./img/story-profile/none-photo.jpg">
+                    </div>
+                    <p>profile13</p>
+                  </div>
+                  <div class="profile">
+                    <div class="img-div">
+                      <img src="./img/story-profile/none-photo.jpg">
+                    </div>
+                    <p>profile14</p>
+                  </div>
+                  <div class="profile">
+                    <div class="img-div">
+                      <img src="./img/story-profile/none-photo.jpg">
+                    </div>
+                    <p>profile15</p>
+                  </div>
+                  <div class="profile">
+                    <div class="img-div">
+                      <img src="./img/story-profile/none-photo.jpg">
+                    </div>
+                    <p>profile16</p>
+                  </div>
+                  <div class="profile">
+                    <div class="img-div">
+                      <img src="./img/story-profile/none-photo.jpg">
+                    </div>
+                    <p>profile17</p>
+                  </div>
+                  <div class="profile">
+                    <div class="img-div">
+                      <img src="./img/story-profile/none-photo.jpg">
+                    </div>
+                    <p>profile18</p>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+
+            <div class="" id="post-section">
+              <div id="post-content">
+
+                <div class="post-container">
+                  <div class="post-header">
+                    <div class="post-account-img">
+                      <img src="./img/post-profile/profile-1.jpg">
+                    </div>
+                    <div class="post-account-info">
+                      <div class="post-account-info-up">
+                        <span class="post-account-name">nordic_sisterhood
+                        </span>
+                        <i class="fa-solid fa-circle"></i>
+                        <span class="post-account-time">2s</span>
+                      </div>
+                      <span class="post-account-info-back-voice">
+
+                      </span>
+                    </div>
+                    <a href="#" class="post-account-other-operations-btn">
+                      <i class="fa-solid fa-circle"></i>
+                      <i class="fa-solid fa-circle"></i>
+                      <i class="fa-solid fa-circle"></i>
+                    </a>
+
+
+                  </div>
+                  <div class="post-video">
+                    <img src="./post videos/post-1.jpg" class="post-img-story">
+                  </div>
+                  <div class="post-interaction">
+                    <i class="fa-regular fa-heart post-like"></i>
+                    <i class="fa-regular fa-comment"></i>
+                    <i class="fa-solid fa-location-arrow"></i>
+                    <i class="fa-regular fa-bookmark"></i>
+                  </div>
+                  <div class="post-comment">
+                    <span class="like-number">550 beğenme</span>
+                    <p class="general-comment">A young woman from Vedbaek, Denmark, buried with her newborn child who
+                      had been placed on the wing of a swan, 4000 BC.
+                      <br><br>
+                      Vedbaek 'The swan's wing burial' Tomb 8 is the most famous of the burials, containing a young
+                      woman, who may have died in childbirth, and a premature baby.
+                      <br><br>
+                      The symbolism of the baby on the swan wing has been much debated with suggestions including purity
+                      and a waterfowl's ability to transcend water, land, and air.
+                      <br><br>
+                      Indeed, both bodies were cared for in death (the disordered state of the mother's ribs suggests
+                      that she may have been resting on an organic "pillow"), suggesting the belief that the spirit
+                      remained with the body.
+                      <br><br>
+                      Illustration: Adam Brockbank
+                    </p>
+                    <p class="post-tags">
+                      #drunkensailor #malinda #vikingmakeup #pagans #vikingsofinstagram #pagansofinstagram #paganmakeup
+                      #skål #seashanty
+                    </p>
+                  </div>
+                </div>
+
+
+
+
+
+                <div class="post-container">
+                  <div class="post-header">
+                    <div class="post-account-img">
+                      <img src="./img/post-profile/profile-2.jpg">
+                    </div>
+                    <div class="post-account-info">
+                      <div class="post-account-info-up">
+                        <span class="post-account-name">nordic_sisterhood
+                        </span>
+                        <i class="fa-solid fa-circle"></i>
+                        <span class="post-account-time">2s</span>
+                      </div>
+                      <span class="post-account-info-back-voice">
+
+                      </span>
+                    </div>
+                    <a href="#" class="post-account-other-operations-btn">
+                      <i class="fa-solid fa-circle"></i>
+                      <i class="fa-solid fa-circle"></i>
+                      <i class="fa-solid fa-circle"></i>
+                    </a>
+
+
+                  </div>
+                  <div class="post-video">
+
+
+
+
+
+                    <img src="./post videos/post-2.PNG" class="post-img-story">
+                  </div>
+                  <div class="post-interaction">
+                    <i class="fa-sharp fa-regular fa-heart post-like"></i>
+                    <i class="fa-regular fa-comment"></i>
+                    <i class="fa-solid fa-location-arrow"></i>
+                    <i class="fa-regular fa-bookmark"></i>
+                  </div>
+                  <div class="post-comment">
+                    <span class="like-number">950 beğenme</span>
+                    <p class="general-comment"><span class="comment-who">web_talks</span>
+                      Learn anything for free 🔥😍
+                      Post by:(<span>@techie_programmer</span>)
+                    </p>
+                    <p class="post-tags">
+                      #coder #codergirl #coderlife #coderpower #coders #coderslife #coding #codingbootcamp #codingisfun
+                      #codinglife #codingpics #java #javascript #programacion #programing #programmer #programmerlife
+                      #programmer #programmerlife #programing #programming #webdesigners #webdesigns #carouselpost
+                      #carouseldesigns #softwaredeveloper #softwareengineer
+                    </p>
+                  </div>
+
+                </div>
+
+
+
+
+
+                <div class="post-container">
+                  <div class="post-header">
+                    <div class="post-account-img">
+                      <img src="./img/post-profile/profile-3.jpg">
+                    </div>
+                    <div class="post-account-info">
+                      <div class="post-account-info-up">
+                        <span class="post-account-name">ahrenshreeve
+                        </span>
+                        <i class="fa-solid fa-circle"></i>
+                        <span class="post-account-time">2s</span>
+                      </div>
+                      <span class="post-account-info-back-voice">
+                        Orjinal ses
+                      </span>
+                    </div>
+                    <a href="#" class="post-account-other-operations-btn">
+                      <i class="fa-solid fa-circle"></i>
+                      <i class="fa-solid fa-circle"></i>
+                      <i class="fa-solid fa-circle"></i>
+                    </a>
+
+
+                  </div>
+                  <div class="post-video">
+                    <div class="post-videos-play-btn">
+                      <i class="fa-solid fa-play"></i>
+                    </div>
+
+                    <div class="post-videos-controller">
+                      <i class="fa-solid fa-user tags"></i>
+
+                      <i class="fa-solid fa-volume-xmark speaker"></i>
+                      <!-- <i class="fa-solid fa-volume-high"></i> -->
+
+                    </div>
+
+
+                    <video autoplay muted loop src="./post videos/post-3.mp4" class="post-short-video">
+
+                    </video>
+                  </div>
+                  <div class="post-interaction">
+                    <i class="fa-sharp fa-regular fa-heart post-like"></i>
+                    <i class="fa-regular fa-comment"></i>
+                    <i class="fa-solid fa-location-arrow"></i>
+                    <i class="fa-regular fa-bookmark"></i>
+                  </div>
+                  <div class="post-comment">
+                    <span class="like-number">162 beğenme</span>
+                    <p class="general-comment"><span class="comment-who">therecurtainaffair</span>
+                      With 150+ Pentatonic Scales, “Exotic Pentatonics” is the most complete book of Pentatonic Scales
+                      in the world. Easy to read for guitarists and all musicians. eBook Available on Amazon
+                    </p>
+                    <p class="post-tags">
+                      #guitar #pentatonic #guitarsolo #guitarlessons #scales #musictheory #acousticguitar #worldmusic
+                    </p>
+                  </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              </div>
+
+            </div>
+
+
+            <!-- <h1>slider</h1>
+            <h1>slider</h1>
+            <h1>slider</h1>
+            <h1>slider</h1>
+            <h1>slider</h1>
+            <h1>slider</h1>
+            <h1>slider</h1>
+            <h1>slider</h1>
+            <h1>slider</h1>
+            <h1>slider</h1>
+            <h1>slider</h1>
+            <h1>slider</h1>
+            <h1>slider</h1>
+            <h1>slider</h1>
+            <h1>slider</h1>
+            <h1>slider</h1>
+            <h1>slider</h1>
+            <h1>slider</h1>
+            <h1>slider</h1>
+            <h1>slider</h1> -->
+          </div>
+          <div class="col-xl-4" id="suggestion" style="width: 383px !important;">
+            <div id="suggestion-content">
+
+              <div id="my-profile">
+                <img src="./img/story-profile/none-photo.jpg" class="my-profile-img">
+                <div class="my-profile-name">
+                  my account
+                </div>
+                <a href="#" class="other-account-btn">
+                  Geçiş Yap
+                </a>
+              </div>
+
+
+
+              <h3 class="suggestion-title">Senin için öneriler</h3>
+
+
+
+
+
+
+
+              <div id="suggestion-profiles">
+
+
+                <div class="suggestion-profile">
+                  <img src="./img/suggestion-profile/kodluyoruz.jpg" class="suggestion-profile-img">
+                  <div class="suggestion-profile-info">
+                    <div class="suggestion-profile-name">
+                      kodluyoruz
+                    </div>
+                    <div class="follow-him-account">
+                      Seni takip ediyor
+                    </div>
+                  </div>
+                  <a href="#" class="follow-btn" style="color: whitesmoke !important;">
+                    Takip Ediliyor
+                  </a>
+                </div>
+
+
+
+                <div class="suggestion-profile">
+                  <img src="./img/suggestion-profile/patika.jpg" class="suggestion-profile-img">
+                  <div class="suggestion-profile-info">
+                    <div class="suggestion-profile-name">
+                      patika.dev
+                    </div>
+                    <div class="follow-him-account">
+                      Seni takip ediyor
+                    </div>
+                  </div>
+                  <a href="#" class="follow-btn" style="color: whitesmoke !important;">
+                    Takip Ediliyor
+                  </a>
+                </div>
+
+                <div class="suggestion-profile">
+                  <img src="./img/suggestion-profile/freecodecamp.jpg" class="suggestion-profile-img">
+                  <div class="suggestion-profile-info">
+                    <div class="suggestion-profile-name">
+                      freecodecamp
+                    </div>
+                    <div class="follow-him-account">
+                      noah,gizemSasmaz1 + 9 ...
+                    </div>
+                  </div>
+                  <a href="#" class="follow-btn">
+                    Takip Et
+                  </a>
+                </div>
+                <div class="suggestion-profile">
+                  <img src="./img/suggestion-profile/hackerrank.jpg" class="suggestion-profile-img">
+                  <div class="suggestion-profile-info">
+                    <div class="suggestion-profile-name">
+                      hackerrank
+                    </div>
+                    <div class="follow-him-account">
+                      Seni takip ediyor
+                    </div>
+                  </div>
+                  <a href="#" class="follow-btn">
+                    Takip Et
+                  </a>
+                </div>
+
+
+
+                <div class="suggestion-profile">
+                  <img src="./img/suggestion-profile/w3.jpg" class="suggestion-profile-img">
+                  <div class="suggestion-profile-info">
+                    <div class="suggestion-profile-name">
+                      w3schools
+                    </div>
+                    <div class="follow-him-account">
+                      elisa_yoss,samion23 + 5 ...
+                    </div>
+                  </div>
+                  <a href="#" class="follow-btn">
+                    Takip Et
+                  </a>
+                </div>
+
+
+                <a href="#" class="all-suggestion-account-btn">Tümünü gör</a>
+
+                <div class="suggestion-other-link">
+                  <a href="#">Hakkında</a>
+                  <i class="fa-solid fa-circle"></i>
+                  <a href="#">Yardım</a>
+                  <i class="fa-solid fa-circle"></i>
+                  <a href="#">Basın</a>
+                  <i class="fa-solid fa-circle"></i>
+                  <a href="#">API</a>
+                  <i class="fa-solid fa-circle"></i>
+                  <a href="#">İş Fırsatları</a>
+                  <i class="fa-solid fa-circle"></i>
+                  <a href="#">Gizlilik</a>
+                  <i class="fa-solid fa-circle"></i>
+                  <a href="#">Koşullar</a>
+                  <i class="fa-solid fa-circle"></i>
+                  <a href="#">Konumlar</a>
+                  <i class="fa-solid fa-circle"></i>
+                  <a href="#">Dil</a>
+                  <i class="fa-solid fa-circle"></i>
+                  <a href="#">Meta Verified</a>
+                </div>
+
+                <p class="suggestion-footer-title">© 2023 INSTAGRAM FROM META</p>
+
+              </div>
+
+            </div>
+
+
+
+          </div>
+
+        </div>
+
+
+
 
       </div>
 
     </div>
+
   </div>
-
-
-
 
 
 
